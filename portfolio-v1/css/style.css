@@ -12,12 +12,6 @@ html {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
   }
-  a {
-      color: #EF233C;
-  }
-  a:hover {
-      text-decoration: none;
-  }
   h1, h2 {
     font-family: 'Caveat', cursive;
     font-weight: 400;
@@ -28,6 +22,15 @@ html {
   h2 {
     font-size: 40px;
     margin-top: 0;
+  }
+  h3 {
+    margin: 0;
+  }
+  a {
+    color: #EF233C;
+  }
+  a:hover {
+      text-decoration: none;
   }
   .content-wrap {
     max-width: 950px;
@@ -40,12 +43,13 @@ html {
     width: 35%;
     float: left;
     padding-right: 3%;
-    min-height: 175px;
   }
   .col-wide {
     width: 62%;
     float: left;
-    min-height: 175px;
+  }
+  .uppercase {
+    text-transform: uppercase;
   }
   
 /* Header & Footer
@@ -84,20 +88,35 @@ footer {
 }
 
 
-
 /* Work experience
 --------------------------------------------------*/
 
 .work {
     background: #EDF2F4;
 }
-
-
-
+h3 ~ p {
+  margin: 0;
+}
+.job-desc p:first-of-type {
+  margin-top: 0;
+}
+.job-desc {
+  margin-bottom: 25px;
+}
 
 /* Education
 --------------------------------------------------*/
 
 .education {
     background: #8D99AE;
+}
+p + h3 {
+  margin-top: 30px;
+}
+
+/* Certification
+--------------------------------------------------*/
+
+.certification {
+  background: #EDF2F4;
 }

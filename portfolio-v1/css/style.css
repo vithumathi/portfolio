@@ -35,7 +35,7 @@ html {
   .content-wrap {
     max-width: 950px;
     margin: 0 auto;
-    padding: 50px;
+    padding: 60px 50px;
     overflow: hidden;
   }
   
@@ -58,6 +58,10 @@ html {
 header, footer {
     background: #2B2D42;
     color: #8D99AE;
+}
+
+header {
+  padding-top: 50px;
 }
 
 /* Header */
@@ -87,6 +91,25 @@ footer {
     display: inline-block;
 }
 
+
+/* Navigation
+--------------------------------------------------*/
+
+nav {
+  text-align: center;
+  background: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+nav a {
+  display: inline-block;
+  padding: 15px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}
 
 /* Work experience
 --------------------------------------------------*/

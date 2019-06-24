@@ -28,6 +28,7 @@ html {
   }
   a {
     color: #EF233C;
+    font-size: 20px;
   }
   a:hover {
       text-decoration: none;

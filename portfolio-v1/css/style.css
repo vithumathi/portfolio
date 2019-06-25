@@ -38,17 +38,7 @@ html {
     margin: 0 auto;
     padding: 60px 50px;
     overflow: hidden;
-  }
-  
-  .col-narrow {
-    width: 35%;
-    float: left;
-    padding-right: 3%;
-  }
-  .col-wide {
-    width: 62%;
-    float: left;
-  }
+  } 
   .uppercase {
     text-transform: uppercase;
   }
@@ -143,4 +133,34 @@ p + h3 {
 
 .certification {
   background: #EDF2F4;
+}
+
+/* Media Queries 
+--------------------------------------------------*/
+
+@media (min-width: 900px) {
+
+  .col-narrow {
+    width: 35%;
+    float: left;
+    padding-right: 3%;
+  }
+  .col-wide {
+    width: 62%;
+    float: left;
+  }
+
+}
+
+@media (max-width: 899px) {
+
+  header {
+    text-align: center;
+  }
+  .profile-img {
+    width: 200px;
+  }
+  header {
+    padding-top: 120px;
+  }
 }

@@ -42,6 +42,10 @@ html {
   .uppercase {
     text-transform: uppercase;
   }
+
+  #main {
+    transition: margin-left .5s;
+  }
   
 /* Header & Footer
 --------------------------------------------------*/
@@ -52,7 +56,7 @@ header, footer {
 }
 
 header {
-  padding-top: 50px;
+  /* padding-top: 50px; */
 }
 
 /* Header */
@@ -86,20 +90,53 @@ footer {
 /* Navigation
 --------------------------------------------------*/
 
-nav {
-  text-align: center;
-  background: white;
-  position: fixed;
-  top: 0;
-  width: 100%;
+.burgrMenu {
+  cursor: pointer;
+  padding: 10px 0 0 10px;
 }
 
-nav a {
-  display: inline-block;
-  padding: 15px 20px;
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+  text-align: center;
+}
+
+.sideNav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+}
+
+.sideNav a {
+  padding: 8px 8px 8px 32px;
   text-decoration: none;
-  text-transform: uppercase;
-  font-weight: 700;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sideNav a:hover {
+  color: #f1f1f1;
+}
+
+.sideNav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 50px;
+  margin-left: 50px;
+  
 }
 
 /* Work experience
@@ -160,7 +197,15 @@ p + h3 {
   .profile-img {
     width: 200px;
   }
-  header {
-    padding-top: 120px;
+  h1 {
+    font-size: 50px;
+  }
+  h2 {
+    font-size: 30px;
+    margin-top: 0;
+  }
+  h3 {
+    margin: 0;
   }
 }
+
